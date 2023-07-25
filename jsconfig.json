@@ -5,6 +5,7 @@
     "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
+      // 因为项目大的时候src里面目录会很多，找文件不方便，设置src文件夹的别名的好处，找文件会方便一些
       "@/*": [
         "src/*"
       ]
@@ -13,7 +14,9 @@
       "esnext",
       "dom",
       "dom.iterable",
-      "scripthost"
+      "scripthost",
+      "node_modules",
+      "dist"
     ]
   }
 }
